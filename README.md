@@ -1,0 +1,1 @@
+This is a project where I store all the technical learnings of mine, like programming.
