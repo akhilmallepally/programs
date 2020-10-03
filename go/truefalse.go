@@ -8,9 +8,7 @@ a := 10
 
 if a %2 ==0 {
     fmt.Println("Even")
-}
-
-else {
+} else {
     fmt.Println("Odd")
 }
 
