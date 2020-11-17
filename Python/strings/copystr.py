@@ -8,3 +8,12 @@ print(id(copiedstr))
 
 
 #DIFF BETWEEN COPY AND CLONE
+
+import copy
+
+
+a = 'level'
+b = copy.copy(a)
+   
+print(id(a))
+print(id(b))
