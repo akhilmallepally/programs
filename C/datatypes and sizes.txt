@@ -1,1 +1,24 @@
+We can use alphabets, numbers and underscore for a variable. And a variable should start only with alphabets, but not with numbers and underscore. Depending on what type of data we can perform the operations.
 
+
+
+Find the sizes usnf the sizeof() on your machine.
+char   - A single byte
+int
+float   - single precision
+double  - double precison    --- what is the precision
+
+
+
+Qualifiers :  What is therep
+
+Short
+long
+signed
+unsigned
+
+
+
+what are?
+<limits.h>
+<float.h>
