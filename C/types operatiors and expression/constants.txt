@@ -1,1 +1,21 @@
+1234 =  int
 
+1234l  = long int
+
+12.34 = float
+
+037 = octal 
+
+0X12 = hexadecimal
+
+0X1l2  = long octal    or hexademical????
+
+'x' = character constant
+
+
+
+defining a constant in a C program :
+
+1 :    const float Pi = 3.14     - This is done in the code. Everytime the occurance of the Pi in the program, it feched the data from the declared constant
+
+2 :    #define Pi 3.14     - This is done by the preprocessor. While the program starts executing, it doesn't ask to fetch data from Pi, by defaults it replaces with the number.
