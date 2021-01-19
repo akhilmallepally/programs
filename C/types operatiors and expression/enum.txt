@@ -1,1 +1,11 @@
+how to use enum in the programs
+
+
+enum boolean {NO,YES};
+
+By defaults NO means O ; YES means 1.
+
+
+enum months {JAN, FEB, MAR ...};
+Assign the specific integers for each month
 
