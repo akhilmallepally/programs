@@ -1,1 +1,28 @@
+In case of exressions(a +b )   Convert the smaller(less bits) operand so that we don't loose data.
 
+
+long to small based on size ( check on the machine once too)
+long double > double > float >short > char
+
+
+In case of assignments we will convert the left had side to right hand side
+a = b  ( There may be loss of data, we should be careful while assigning)
+
+For example (loss of data) :
+char c;
+int i;
+c = i  
+8  16  ( Here the 32 bit variable is assigned to a 16 bit one which results in the loss of data)
+
+(no loss) :
+char c;
+int i;
+i = c;
+16  8
+
+
+
+We can also do this conversions explictl. It is called as type casting
+
+f = (float)10    () - operator in the line is called casting operator
+i = (int)23.5
