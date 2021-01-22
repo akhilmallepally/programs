@@ -15,3 +15,20 @@ print(str_lab)
 str_lab1 = str_lab.upper()
 print(str_lab1)
 print(str_lab1.index("I"))
+
+#2ND QUESTION
+
+lab_activity_string = "lab interesting activities are activities lab Interesting Lab Activities Are Interesting Lab activities Lab Interesting"
+print(lab_activity_string.index("interesting"))
+oops_string = "Object-Oriented-Programming 44542"
+print(oops_string.replace("-","_").replace(" ","-"))
+
+String1 = "Computer"
+String2 = "Science"
+a = len(String1)
+b = len(String2)
+final = String1[0:5]+String2[0:3].upper()+str(a)+str(b)
+print(final)
+
+print(“Why  do  you  choose  Applied Computer Science”)
+print("I chose ACS because of XYZ")
