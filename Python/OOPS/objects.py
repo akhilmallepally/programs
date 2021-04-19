@@ -64,3 +64,9 @@ print("Rounded Value of cos 45: ", round(math.cos(myNumber1)))
 print("Rounded Value of cos 27: ", round(math.cos(myNumber2)))
 print("Rounded Value of tan 45: ", round(math.tan(myNumber1)))
 print("Rounded Value of tan 27: ", round(math.tan(myNumber2)))
+
+
+import random
+x = random.sample(range(0,200)
+print(x)
+print(y)
