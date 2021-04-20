@@ -1,5 +1,5 @@
 class Laptop:
-    def __init__(self, laptopBrand, processor, operatingSystem, hardDrive, display, touch):  #
+    def __init__(self, laptopBrand, processor, operatingSystem, hardDrive, display, touch):
         self.laptopBrand = laptopBrand
         self.processor = processor
         self.operatingSystem = operatingSystem
@@ -7,7 +7,7 @@ class Laptop:
         self.display = display
         self.touch = touch
 
-    def __init():                       #no arg constructor
+    def __init(self):                       #no arg constructor
         pass
 
     def getLaptopBrand(self):
