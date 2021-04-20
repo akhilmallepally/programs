@@ -91,8 +91,60 @@ class RouteCalculator:
         else:
             return 0.0
 
+    def calcFirstTimeUserDiscount(self):
+        if self.isFirstTimeUser: 
+            if self.numpassengers == 1:
+                if self.routeNo == 1:
+                    return 35 * 10.0/100
+                elif self.routeNo == 2:
+                    return 32.89 * 10.0/100
+                elif self.routeNo >3:
+                    return 38 * 10.0/100
+            elif self.numpassengers == 2:
+                if self.routeNo == 1:
+                    return 60 * 7.0/100
+                elif self.routeNo == 2:
+                    return 53.12 * 7.0/100
+                elif self.routeNo == 3:
+                    return 63.78 * 7.0/100
+            elif self.numpassengers>2:
+                if self.routeNo == 1:
+                    return (self.numpassengers * 26.50) * 4.0/100
+                elif self.routeNo == 2:
+                    return (self.numpassengers * 24.20) * 4.0/100
+                elif self.routeNo == 3:
+                    return (self.numpassengers * 28.78) * 4.0/100
+        else:
+            return 0.0
 
+    def calcCouponDiscount(self):
+        if self.haveCoupon:
+            if self.numpassengers == 1:
+                if self.routeNo == 1:
+                    return 35 - 5.0
+                elif self.routeNo == 2:
+                    return 32.89 - 5.0
+                elif self.routeNo >3:
+                    return 38 - 5.0
+            elif self.numpassengers == 2:
+                if self.routeNo == 1:
+                    return 60 - 5.0
+                elif self.routeNo == 2:
+                    return 53.12 - 5.0
+                elif self.routeNo == 3:
+                    return 63.78 - 5.0
+            elif self.numpassengers>2:
+                if self.routeNo == 1:
+                    return (self.numpassengers * 26.50) - 5.0
+                elif self.routeNo == 2:
+                    return (self.numpassengers * 24.20) - 5.0
+                elif self.routeNo == 3:
+                    return (self.numpassengers * 28.78) - 5.0
+        else:
+            return 0.0
 
-route_obj1 = RouteCalculator(1, 30, True, True, False)
+route_obj1 = RouteCalculator(1, 30, True, True, True)
 print(route_obj1.calcRoutePrice())
 print(route_obj1.calcMembershipDiscount())
+print(route_obj1.calcFirstTimeUserDiscount())
+print(route_obj1.calcCouponDiscount())
