@@ -1,1 +1,1 @@
-This is a project where I store all the technical learnings of mine, like programming.
+Find the basic to intermediate level programs & concepts using Python, Java, Go and C
