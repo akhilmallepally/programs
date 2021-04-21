@@ -6,8 +6,7 @@ class RouteCalculator:
         self.isMember = isMember
         self.isFirstTimeUser = isFirstTimeUser
         self.haveCoupon = haveCoupon
-        Coupon = 5.00
-        salesTax = 7.50
+        
         
     # def __init__(self):
     #     pass
@@ -22,10 +21,10 @@ class RouteCalculator:
         return self.isFirstTimeUser
     def get_haveCoupon(self):
         return self.haveCoupon
-    def get_Coupon(self):
-        return Coupon
-    def get_salesTax(self):
-        return salesTax
+    # def get_Coupon(self):
+    #     return Coupon
+    # def get_salesTax(self):  
+    #     return salesTax
     
     def set_routeNo(self, routeNo):
         self.routeNo = routeNo
@@ -37,10 +36,10 @@ class RouteCalculator:
         self.isFirstTimeUser = isFirstTimeUser
     def set_haveCoupon(self, haveCoupon):
         self.haveCoupon = haveCoupon
-    def set_Coupon(self, Coupon):
-        self.Coupon = Coupon
-    def set_salesTax(self, salesTax):
-        self.salesTax = salesTax
+    # def set_Coupon(self, Coupon):  these are not required as they are not attributes which are to be defined
+    #     self.Coupon = Coupon
+    # def set_salesTax(self, salesTax):
+    #     self.salesTax = salesTax
     
     def calcRoutePrice(self):
         if self.routeNo == 1:
@@ -142,9 +141,19 @@ class RouteCalculator:
                     return (self.numpassengers * 28.78) - 5.0
         else:
             return 0.0
+    def totalPrice(self):
+        if self.isMember and self.isFirstTimeUser and self.haveCoupon:
+            return self.calcCouponDiscount() - self.calcMembershipDiscount() - self.calcFirstTimeUserDiscount()
+    def totalPriceWithSalesTax(self):
+        return self.totalPrice() * salesTax /100 
+
+Coupon = 5.00
+salesTax = 7.50
 
 route_obj1 = RouteCalculator(1, 30, True, True, True)
 print(route_obj1.calcRoutePrice())
 print(route_obj1.calcMembershipDiscount())
 print(route_obj1.calcFirstTimeUserDiscount())
 print(route_obj1.calcCouponDiscount())
+print(route_obj1.totalPrice())
+print(route_obj1.totalPriceWithSalesTax())
