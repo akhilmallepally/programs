@@ -63,7 +63,9 @@ class RouteCalculator:
                 return 63.78
             elif self.numpassengers > 2:
                 return self.numpassengers * 28.78
-    
+        else:
+            return "Route number should be 1 or 2 or 3"
+
     def calcMembershipDiscount(self):
         if self.isMember:
             if self.numpassengers == 1:
@@ -150,10 +152,11 @@ class RouteCalculator:
 Coupon = 5.00
 salesTax = 7.50
 
-route_obj1 = RouteCalculator(1, 30, True, True, True)
+route_obj1 = RouteCalculator(0,20, True, True, True)
 print(route_obj1.calcRoutePrice())
 print(route_obj1.calcMembershipDiscount())
 print(route_obj1.calcFirstTimeUserDiscount())
 print(route_obj1.calcCouponDiscount())
 print(route_obj1.totalPrice())
 print(route_obj1.totalPriceWithSalesTax())
+print("Please try again” )
