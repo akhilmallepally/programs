@@ -27,4 +27,11 @@ class Starbucks:
         self.contactNumber = contactNumber
     def set_customerType(self, customerType):
         self.customerType  = customerType
-    
+
+    def getNameInitials(self):
+        for i in customerName:
+            if customerName[i]
+            return customerName.title()
+
+    def getItemName(self):
+
