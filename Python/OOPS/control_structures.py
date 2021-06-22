@@ -29,9 +29,9 @@ class Starbucks:
         self.customerType  = customerType
 
     def getNameInitials(self):
-        for i in customerName:
-            if customerName[i]
-            return customerName.title()
+        for i in len(customerName):
+            
 
     def getItemName(self):
+        return 
 
