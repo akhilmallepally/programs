@@ -152,11 +152,11 @@ class RouteCalculator:
 Coupon = 5.00
 salesTax = 7.50
 
-route_obj1 = RouteCalculator(0,20, True, True, True)
+route_obj1 = RouteCalculator(1,20, True, True, True)
 print(route_obj1.calcRoutePrice())
 print(route_obj1.calcMembershipDiscount())
 print(route_obj1.calcFirstTimeUserDiscount())
 print(route_obj1.calcCouponDiscount())
 print(route_obj1.totalPrice())
 print(route_obj1.totalPriceWithSalesTax())
-print("Please try again” )
+print("Please try again")
