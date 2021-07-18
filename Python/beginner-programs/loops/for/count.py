@@ -1,4 +1,4 @@
-num = 75869
+num = 0
 count = 0
 for i in str(num):
     count = count+1
