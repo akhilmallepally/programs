@@ -31,6 +31,24 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
     
+    def insert_at_postion(self, pos, data):
+        new_node = Node(data)
+        if pos < 0:
+            print("Invalid position")
+            return
+        if pos == 0:
+            new_node.next = self.head
+            self.head = new_node
+        counter = 1
+        current = self.head
+        while current != None:
+            if counter == pos:
+                new_node.next = current.next
+                current.next = new_node
+                break
+            counter+=1
+            current = current.next
+            
     def delete_node(self, ele):
         if self.head == None:
             print("List empty")
